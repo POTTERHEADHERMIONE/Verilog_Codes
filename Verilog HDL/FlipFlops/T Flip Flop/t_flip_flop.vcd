@@ -1,0 +1,197 @@
+$date
+	Sun Feb 09 00:04:50 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module T_Flip_Flop_tb $end
+$var wire 1 ! Qbar $end
+$var wire 1 " Q $end
+$var reg 1 # T $end
+$var reg 1 $ clear $end
+$var reg 1 % clk $end
+$var reg 1 & prev_Q $end
+$scope module uut $end
+$var wire 1 ' D $end
+$var wire 1 # T $end
+$var wire 1 $ clear $end
+$var wire 1 % clk $end
+$var wire 1 ! Qbar $end
+$var wire 1 " Q $end
+$scope module D1 $end
+$var wire 1 ' D $end
+$var wire 1 " Q $end
+$var wire 1 ( Q_int $end
+$var wire 1 ! Qbar $end
+$var wire 1 ) Qbar_int $end
+$var wire 1 * R $end
+$var wire 1 + S $end
+$var wire 1 $ clear $end
+$var wire 1 % clk $end
+$var wire 1 , nclk $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1,
+0+
+1*
+0)
+1(
+1'
+0&
+0%
+1$
+0#
+1"
+1!
+$end
+#5000
+1+
+0,
+1%
+#10000
+0)
+0+
+1*
+1,
+0%
+0$
+#15000
+1+
+0'
+0,
+0"
+1%
+#20000
+0)
+0+
+1*
+1'
+1,
+1"
+0%
+#25000
+1+
+0'
+0,
+0"
+1%
+#30000
+0(
+1)
+0*
+1+
+1,
+1"
+0'
+0%
+1#
+#35000
+1*
+0,
+0!
+1%
+#40000
+0*
+1,
+1!
+0%
+1&
+#45000
+1*
+0,
+0!
+1%
+#50000
+0*
+1,
+1!
+0%
+#55000
+1*
+0,
+0!
+1%
+#60000
+0*
+1,
+1!
+0%
+#65000
+1*
+0,
+0!
+1%
+#70000
+0*
+1,
+1!
+0%
+#75000
+1*
+0,
+0!
+1%
+#80000
+0*
+1,
+1!
+0%
+#85000
+1*
+0,
+0!
+1%
+#90000
+0)
+1(
+0+
+1,
+1!
+1'
+0%
+0#
+#95000
+1+
+0'
+0,
+0"
+1%
+#100000
+0(
+1)
+0*
+1+
+1,
+1"
+0'
+0%
+1#
+0&
+#105000
+1*
+0,
+0!
+1%
+#110000
+0*
+1,
+1!
+0%
+1&
+#115000
+1*
+0,
+0!
+1%
+#120000
+0*
+1,
+1!
+0%

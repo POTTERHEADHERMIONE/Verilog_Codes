@@ -1,0 +1,30 @@
+$date
+	Sat Feb 08 22:29:18 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module simulation $end
+$var wire 2 ! out [1:0] $end
+$var reg 2 " A [1:0] $end
+$var reg 2 # B [1:0] $end
+$scope module op1 $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 & out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#10
+$dumpvars
+0&
+0%
+x$
+b10 #
+b0x "
+b0 !
+$end
+#20

@@ -1,0 +1,62 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000022df073ac40 .scope module, "simulate" "simulate" 2 1;
+ .timescale 0 0;
+v0000022df089b820_0 .var "A", 3 0;
+v0000022df089b8c0_0 .var "B", 3 0;
+v0000022df089b960_0 .net "Carry", 3 0, L_0000022df0739010;  1 drivers
+v0000022df089ba00_0 .net "Sum", 3 0, L_0000022df0823180;  1 drivers
+S_0000022df073add0 .scope module, "HA" "half_adder" 2 4, 3 1 0, S_0000022df073ac40;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 4 "Sum";
+    .port_info 1 /OUTPUT 4 "Carry";
+    .port_info 2 /INPUT 4 "A";
+    .port_info 3 /INPUT 4 "B";
+L_0000022df0823180 .functor XOR 4, v0000022df089b820_0, v0000022df089b8c0_0, C4<0000>, C4<0000>;
+L_0000022df0739010 .functor AND 4, v0000022df089b820_0, v0000022df089b8c0_0, C4<1111>, C4<1111>;
+v0000022df073af60_0 .net "A", 3 0, v0000022df089b820_0;  1 drivers
+v0000022df0856260_0 .net "B", 3 0, v0000022df089b8c0_0;  1 drivers
+v0000022df08230e0_0 .net "Carry", 3 0, L_0000022df0739010;  alias, 1 drivers
+v0000022df0738f70_0 .net "Sum", 3 0, L_0000022df0823180;  alias, 1 drivers
+    .scope S_0000022df073ac40;
+T_0 ;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0000022df089b820_0, 0, 4;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0000022df089b8c0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 4;
+    %store/vec4 v0000022df089b820_0, 0, 4;
+    %pushi/vec4 1, 0, 4;
+    %store/vec4 v0000022df089b8c0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0000022df089b820_0, 0, 4;
+    %pushi/vec4 4, 0, 4;
+    %store/vec4 v0000022df089b8c0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 12, 0, 4;
+    %store/vec4 v0000022df089b820_0, 0, 4;
+    %pushi/vec4 4, 0, 4;
+    %store/vec4 v0000022df089b8c0_0, 0, 4;
+    %end;
+    .thread T_0;
+    .scope S_0000022df073ac40;
+T_1 ;
+    %vpi_call 2 16 "$monitor", "A:%b | B:%b | Sum:%d | Carry:%d", v0000022df089b820_0, v0000022df089b8c0_0, v0000022df089ba00_0, v0000022df089b960_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.v";
+    "half.v";
